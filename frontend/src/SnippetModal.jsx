@@ -111,7 +111,7 @@ export default function SnippetModal({
   // Fetch version history for snippet
   const fetchVersions = async (snippetId) => {
     try {
-      const res = await fetch(`http://localhost:8000/api/snippets/${snippetId}/versions`, {
+      const res = await fetch(`/api/snippets/${snippetId}/versions`, {
         headers: { 'Authorization': `Bearer ${getAuthToken()}` }
       });
       if (res.ok) {
@@ -150,8 +150,8 @@ export default function SnippetModal({
 
     try {
       const url = isEditing
-        ? `http://localhost:8000/api/snippets/${snippet.id}`
-        : 'http://localhost:8000/api/snippets';
+        ? `/api/snippets/${snippet.id}`
+        : '/api/snippets';
 
       const method = isEditing ? 'PUT' : 'POST';
 
@@ -182,7 +182,7 @@ export default function SnippetModal({
 
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:8000/api/snippets/${snippet.id}/rollback/${versionId}`, {
+      const res = await fetch(`/api/snippets/${snippet.id}/rollback/${versionId}`, {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${getAuthToken()}` }
       });

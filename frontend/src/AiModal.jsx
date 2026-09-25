@@ -57,7 +57,7 @@ export default function AiModal({
     formData.append('file', selectedImage);
 
     try {
-      const res = await fetch('http://localhost:8000/api/ai/photo-to-code', {
+      const res = await fetch('/api/ai/photo-to-code', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${getAuthToken()}`
@@ -85,7 +85,7 @@ export default function AiModal({
     setLoading(true);
     setError('');
     try {
-      const res = await fetch('http://localhost:8000/api/ai/smart-fix', {
+      const res = await fetch('/api/ai/smart-fix', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -115,7 +115,7 @@ export default function AiModal({
     setLoading(true);
     setError('');
     try {
-      const res = await fetch('http://localhost:8000/api/ai/explain', {
+      const res = await fetch('/api/ai/explain', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

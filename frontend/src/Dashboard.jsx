@@ -85,7 +85,7 @@ export default function Dashboard({ userEmail, onLogout }) {
       if (selectedTag) params.append('tag', selectedTag);
       if (onlyFavorites) params.append('favorite', 'true');
 
-      const res = await fetch(`http://localhost:8000/api/snippets?${params.toString()}`, {
+      const res = await fetch(`/api/snippets?${params.toString()}`, {
         headers: { 'Authorization': `Bearer ${getAuthToken()}` }
       });
 
@@ -115,7 +115,7 @@ export default function Dashboard({ userEmail, onLogout }) {
   const handleToggleFavorite = async (e, snippetId) => {
     e.stopPropagation();
     try {
-      const res = await fetch(`http://localhost:8000/api/snippets/${snippetId}/favorite`, {
+      const res = await fetch(`/api/snippets/${snippetId}/favorite`, {
         method: 'PATCH',
         headers: { 'Authorization': `Bearer ${getAuthToken()}` }
       });
@@ -138,7 +138,7 @@ export default function Dashboard({ userEmail, onLogout }) {
     }
 
     try {
-      const res = await fetch(`http://localhost:8000/api/snippets/${snippetId}`, {
+      const res = await fetch(`/api/snippets/${snippetId}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${getAuthToken()}` }
       });
