@@ -199,7 +199,7 @@ def explain_code_hinglish(code: str, language: str) -> dict:
     if not client:
         return {
             "explanation": (
-                "Ye code snippet vault ka basic demo explanation hai.\n\n"
+                "Ye Code Nest ka basic demo explanation hai.\n\n"
                 "1. Ye function data ko process karta hai step by step.\n"
                 "2. Loop har item pe iterate karta hai aur conditions "
                 "match karta hai.\n"

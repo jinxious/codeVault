@@ -196,7 +196,7 @@ export default function Dashboard({ userEmail, onLogout }) {
             <Code2 size={22} />
           </div>
           <div>
-            <span>Code Snippet Vault</span>
+            <span>Code Nest</span>
           </div>
         </div>
 

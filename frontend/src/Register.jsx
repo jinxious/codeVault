@@ -62,7 +62,7 @@ export default function Register({ onRegisterSuccess, onSwitchToLogin }) {
             <UserCheck size={30} />
           </div>
           <h1 style={{ fontSize: '1.6rem', fontWeight: '700', letterSpacing: '-0.02em', marginBottom: '0.4rem' }}>Create an Account</h1>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Join Code Snippet Vault to organize your code.</p>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Join Code Nest to organize your code.</p>
         </div>
 
         {error && (

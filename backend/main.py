@@ -18,7 +18,7 @@ import ai_helper
 Base.metadata.create_all(bind=engine)
 
 # Initialize FastAPI app
-app = FastAPI(title="Code Snippet Vault API", version="1.0.0")
+app = FastAPI(title="Code Nest API", version="1.0.0")
 
 # Enable CORS so our React frontend on localhost:5173 can make requests
 app.add_middleware(
@@ -31,7 +31,7 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"status": "online", "message": "Code Snippet Vault API is running smoothly!"}
+    return {"status": "online", "message": "Code Nest API is running smoothly!"}
 
 @app.get("/api/health")
 def health_check():

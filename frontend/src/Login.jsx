@@ -50,7 +50,7 @@ export default function Login({ onLoginSuccess, onSwitchToRegister }) {
           <div style={{ width: '54px', height: '54px', borderRadius: '10px', background: '#D6A64F', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#0D1014', marginBottom: '1rem' }}>
             <Code2 size={30} />
           </div>
-          <h1 style={{ fontSize: '1.6rem', fontWeight: '700', letterSpacing: '-0.02em', marginBottom: '0.4rem' }}>Code Snippet Vault</h1>
+          <h1 style={{ fontSize: '1.6rem', fontWeight: '700', letterSpacing: '-0.02em', marginBottom: '0.4rem' }}>Code Nest</h1>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Welcome back! Log in to access your snippets.</p>
         </div>
 
